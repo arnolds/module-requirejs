@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block name="koz.requirejs.imperative" template="Koz_RequireJS::imperative.phtml" before="-" />
+            <block name="koz.requirejs.data.mage.init" template="Koz_RequireJS::data-mage-init.phtml" after="koz.requirejs.imperative" />
+            <block name="koz.requirejs.x.magento.init" template="Koz_RequireJS::x-magento-init.phtml" after="koz.requirejs.data.mage.init" />
+            <block name="koz.requirejs.api" template="Koz_RequireJS::api.phtml" after="koz.requirejs.x.magento.init" />
+        </referenceContainer>
+    </body>
+</page>

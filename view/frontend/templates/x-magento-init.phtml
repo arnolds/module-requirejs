@@ -1,0 +1,52 @@
+<?php /** @var $block \Magento\Framework\View\Element\Template */ ?>
+
+<div class="block requirejs-x-magento-init">
+    <h2>x-magento-init</h2>
+</div>
+
+<!-- Target no elements. -->
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Koz_RequireJS/js/x-magento-init": {}
+        }
+    }
+</script>
+
+<!-- Target specific element. -->
+<script type="text/x-magento-init">
+    {
+        ".requirejs-x-magento-init": {
+            "Koz_RequireJS/js/x-magento-init-element": {}
+        }
+    }
+</script>
+
+<!-- If element does not exist, JS won't be called -->
+<script type="text/x-magento-init">
+    {
+        ".does-not-exist": {
+            "Koz_RequireJS/js/x-magento-init-does-not-exist": {}
+        }
+    }
+</script>
+
+<!-- Alias -->
+<script type="text/x-magento-init">
+    {
+        ".requirejs-x-magento-init": {
+            "x-magento-init-alias": {}
+        }
+    }
+</script>
+
+<!-- Alias with config -->
+<script type="text/x-magento-init">
+    {
+        ".requirejs-x-magento-init": {
+            "x-magento-init-alias-config": {
+                "message": "Added through x-magento-init using an alias, with configuration."
+            }
+        }
+    }
+</script>

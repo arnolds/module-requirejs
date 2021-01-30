@@ -1,0 +1,24 @@
+<?php /** @var $block \Magento\Framework\View\Element\Template */ ?>
+
+<div class="block requirejs-imperative">
+    <h2>Imperative</h2>
+    <p>You can use imperative (inline) require calls, but they are discouraged according to the Magento 2 coding standards.</p>
+</div>
+
+<script>
+    require([
+        'jquery',
+        'Koz_RequireJS/js/imperative'
+    ], function ($, value) {
+        $('.requirejs-imperative').append(`<p>${value.message}</p>`);
+    });
+</script>
+
+<script>
+    require([
+        'jquery',
+        'imperative-alias'
+    ], function ($, value) {
+        $('.requirejs-imperative').append(`<p>${value.message}</p>`);
+    })
+</script>

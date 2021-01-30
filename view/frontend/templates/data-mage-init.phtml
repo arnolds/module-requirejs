@@ -1,0 +1,12 @@
+<?php /** @var $block \Magento\Framework\View\Element\Template */ ?>
+
+<div class="block requirejs-data-mage-init">
+    <h2>data-mage-init</h2>
+    <p>You can use `data-mage-init` attribute to initialize JS.</p>
+    <!-- Keep close attention to the quotes. Single quotes around the attribute value, double quotes inside the value. -->
+    <p data-mage-init='{"Koz_RequireJS/js/data-init": {}}'></p>
+    <!-- Aliases can be used. -->
+    <p data-mage-init='{"data-init-alias": {}}'></p>
+    <!-- You can pass in configuration, but it quickly becomes hard to read. -->
+    <p data-mage-init='{"data-init-alias-config": {"message": "Added through data-mage-init using an alias, and passing configuration."}}'></p>
+</div>

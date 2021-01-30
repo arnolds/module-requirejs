@@ -1,0 +1,86 @@
+<?php /** @var $block \Magento\Framework\View\Element\Template */ ?>
+
+<div class="block requirejs-api">
+    <h2>API</h2>
+    <p>Examples to demonstrate RequireJS API configuration that is available.</p>
+    <p>These examples work for declarative notation.</p>
+    <div class="requirejs-api-config">
+        <h3>Config</h3>
+    </div>
+    <div class="requirejs-api-paths">
+        <h3>Paths</h3>
+    </div>
+    <div class="requirejs-api-map">
+        <h3>Map</h3>
+    </div>
+    <div class="requirejs-api-shim">
+        <h3>Shim</h3>
+        <p>See console for output.</p>
+    </div>
+    <div class="requirejs-api-packages">
+        <h3>Packages</h3>
+        <p>See console for output.</p>
+    </div>
+    <div class="requirejs-api-plugin">
+        <h3>Plugin</h3>
+    </div>
+</div>
+
+<!-- RequireJS API `config`. -->
+<script type="text/x-magento-init">
+    {
+        ".requirejs-api-config": {
+            "Koz_RequireJS/js/api/config": {}
+        }
+    }
+</script>
+
+<!-- RequireJS API `paths`. -->
+<script type="text/x-magento-init">
+    {
+        ".requirejs-api-paths": {
+            "path": {},
+            "path/extra": {},
+            "fallback": {}
+        }
+    }
+</script>
+
+<!-- RequireJS API `map`. -->
+<script type="text/x-magento-init">
+    {
+        ".requirejs-api-map": {
+            "Koz_RequireJS/js/api/map": {}
+        }
+    }
+</script>
+
+<!-- RequireJS API `shim`. -->
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Koz_RequireJS/js/api/shim/deps": {},
+            "Koz_RequireJS/js/api/shim/deps-alt": {},
+            "Koz_RequireJS/js/api/shim/exports": {},
+            "Koz_RequireJS/js/api/shim/init": {}
+        }
+    }
+</script>
+
+<!-- RequireJS API `packages`. -->
+<script type="text/x-magento-init">
+    {
+        ".requirejs-api-packages": {
+            "Koz_RequireJS/js/api/package": {}
+        }
+    }
+</script>
+
+<!-- RequireJS API `plugin`. -->
+<script type="text/x-magento-init">
+    {
+        ".requirejs-api-plugin": {
+            "Koz_RequireJS/js/api/plugin": {}
+        }
+    }
+</script>
